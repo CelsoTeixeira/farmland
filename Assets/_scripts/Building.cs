@@ -1,4 +1,6 @@
 using System;
+using System.Text;
+using Interface;
 using UnityEngine;
 
 namespace Terrain
@@ -15,17 +17,22 @@ namespace Terrain
 
     public class Building : MonoBehaviour
     {
+        public BuildingDetails Details;
 
-        private void Awake()
+        public TooltipInformation GetTooltipInformation()
         {
-            
-        }
+            var detailsText = new StringBuilder();
+            detailsText.Append(Details.Name);
 
+            return new TooltipInformation()
+            {
+                DetailsText = detailsText.ToString(),
+            };
+        }
+        
         private void OnDrawGizmos()
         {
             DebugExtension.DrawBounds(new Bounds(transform.position, new Vector3(1, 1, 1)), Color.yellow);
-            
-            
         }
     }
 }

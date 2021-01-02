@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BuildingCollection
   m_EditorClassIdentifier: 
   Buildings:
-  - Name: Hoiuse
+  - Name: House
     Width: 1
     Height: 1
     Prefab: {fileID: 7963284436088596635, guid: ac637dfbfc7fe184ca217e7ea21aea71,

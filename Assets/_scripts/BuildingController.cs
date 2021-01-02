@@ -16,11 +16,19 @@ namespace Terrain
         {
             buildings = new Building[xSize, ySize];
         }
- 
+
+        public void SetBuilding(Building toBuild, int xPosition, int yPosition)
+        {
+            buildings[xPosition, yPosition] = toBuild;
+        }
+
+        public Building GetBuilding(int xPosition, int yPosition)
+        {
+            return buildings[xPosition, yPosition];
+        }
+        
         public bool CanBuild(int xPosition, int yPosition)
         {
-            
-            
             var building = buildings[xPosition, yPosition];
             return building == null;
         }
