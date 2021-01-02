@@ -1,4 +1,5 @@
 using System;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -16,24 +17,26 @@ namespace Terrain
     {
         public Tile TilePrefab;
         private Tile[,] tiles;
-        private Tile[,] buildings;
-        
-        
+
         public TileCollection TileCollection;
         
-
         public GenerationSettings GenerationSettings;
+
+        private void Awake()
+        {
+            TileCollection = Resources.Load<TileCollection>("TileCollection");
+        }
         
         void Start()
         {
             Initialize();
         }
         
+        [ContextMenu("Generate Board")]
         public void Initialize()
         {
             tiles = new Tile[GenerationSettings.XSize,GenerationSettings.YSize];
-            buildings = new Tile[GenerationSettings.XSize,GenerationSettings.YSize];
-            
+
             for (var x = 0; x < GenerationSettings.XSize; x++)
             {
                 for (var y = 0; y < GenerationSettings.YSize; y++)
@@ -49,6 +52,9 @@ namespace Terrain
                     tiles[x, y] = tile;
                 }
             }
+            
+            //Initialize Buildings board
+            GameObject.FindObjectOfType<BuildingController>().GenerateBoard(GenerationSettings.XSize, GenerationSettings.YSize);
         }
         
         public Tile GetTile(int xPosition, int yPosition)
@@ -56,9 +62,17 @@ namespace Terrain
             return tiles[xPosition, yPosition];
         }
 
-        public bool CanConstruct(int xPosition, int yPosition)
+        [ContextMenu("Clear Board")]
+        public void Delete()
         {
-            return false;
+            var toDelete = transform.GetComponentsInChildren<Tile>();
+            if (toDelete.Length == 0) return;
+            foreach (var tile in toDelete)
+            {
+                DestroyImmediate(tile.gameObject);
+            }
         }
+        
+        
     }
 }

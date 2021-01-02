@@ -6,11 +6,6 @@ using UnityEngine;
 
 namespace Terrain
 {
-    public class Building : MonoBehaviour
-    {
-        
-    }
-    
     public enum TileType
     {
         None, 
@@ -31,20 +26,12 @@ namespace Terrain
 
         public void SetType(TileDetails details)
         {
+            if (Sprite == null) Sprite = GetComponent<SpriteRenderer>();
+            
             TileType = details.Type;
             Sprite.sprite = details.Sprite;
         }
         
-        public void Print()
-        {
-            var print = new StringBuilder();
-            print.Append("Tile Information: ").AppendLine();
-            print.Append("Position: ").Append(Mathf.RoundToInt(transform.position.x)).Append("/")
-                .Append(Mathf.RoundToInt(transform.position.y)).AppendLine();
-            print.Append("Type: ").Append(TileType).AppendLine();
-
-        }
-
         public TooltipInformation GetTooltipInformation()
         {
             var positionText = new StringBuilder();

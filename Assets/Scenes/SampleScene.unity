@@ -867,6 +867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662715101}
   - component: {fileID: 1662715100}
+  - component: {fileID: 1662715103}
   - component: {fileID: 1662715102}
   m_Layer: 0
   m_Name: Controller
@@ -919,3 +920,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21076e9d0c524d289456da473198b2e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1662715103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662715099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a3806f6c55436bab9ba0a20201e35d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuildingCollection: {fileID: 11400000, guid: 2e366e4a727fa9b4680772f6ece27aba, type: 2}
