@@ -13,6 +13,8 @@ namespace Farmland.Interface
 
         private void Awake()
         {
+            resourceRenderList = new List<ResourceAmountRenderer>();
+            
             var collection = Resources.Load<ResourceCollection>("ResourceCollection");
             var allResources = collection.GetAllResources();
             for (var i = 0; i < allResources.Count; i++)
