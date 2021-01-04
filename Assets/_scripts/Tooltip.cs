@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Interface
+namespace Farmland.Interface
 {
     public struct TooltipInformation
     {

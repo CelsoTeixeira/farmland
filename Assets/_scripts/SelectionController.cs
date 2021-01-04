@@ -1,10 +1,10 @@
 using System;
 using System.Text;
-using Interface;
-using Terrain;
+using Farmland.Interface;
+using Farmland.Terrain;
 using UnityEngine;
 
-namespace Selection
+namespace Farmland.Selection
 {
     public class SelectionController : MonoBehaviour
     {

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Terrain
+namespace Farmland.Terrain
 {
     public class BuildingController : MonoBehaviour
     {

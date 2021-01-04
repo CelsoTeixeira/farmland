@@ -1,9 +1,9 @@
 using System;
 using System.Text;
-using Interface;
+using Farmland.Interface;
 using UnityEngine;
 
-namespace Terrain
+namespace Farmland.Terrain
 {
     [Serializable]
     public struct BuildingDetails

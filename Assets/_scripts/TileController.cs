@@ -1,9 +1,8 @@
 using System;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Terrain
+namespace Farmland.Terrain
 {
     [Serializable]
     public struct GenerationSettings

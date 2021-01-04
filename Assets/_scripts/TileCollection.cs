@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Terrain
+namespace Farmland.Terrain
 {
     [CreateAssetMenu(menuName = "Farmland/Create TileCollection", fileName = "TileCollection", order = 0)]
     public class TileCollection : ScriptableObject

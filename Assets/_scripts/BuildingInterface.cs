@@ -1,14 +1,11 @@
-using System;
-using Selection;
-using Terrain;
+using Farmland.Selection;
+using Farmland.Terrain;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Interface
+namespace Farmland.Interface
 {
-    
-    
     public class BuildingInterface : MonoBehaviour
     {
         public Transform ScrollRoot;

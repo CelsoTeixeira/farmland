@@ -7,20 +7,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/celsi/Documents/GitHub/farmland/Assets/_scripts/Building.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/_scripts/SelectionController.cs" />
-      <option value="$PROJECT_DIR$/Assets/_scripts/Tooltip.cs" />
-      <option value="$PROJECT_DIR$/Assets/_scripts/TileController.cs" />
+      <option value="$PROJECT_DIR$/.gitignore" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/BuildingCollection.cs" />
       <option value="$PROJECT_DIR$/Assets/_scripts/Tile.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/TileController.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/BuildingInterface.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/BuildingController.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/Building.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/Tooltip.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/SelectionController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mRVVQPA6xeZBQABFUhdDfqXRq7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -65,8 +80,37 @@
       <option name="presentableId" value="Default" />
       <updated>1609456423782</updated>
       <workItem from="1609456425773" duration="7344000" />
-      <workItem from="1609538319804" duration="1483000" />
+      <workItem from="1609538319804" duration="12177000" />
     </task>
+    <task id="LOCAL-00001" summary="Project setup on git.&#10;Added initial code.">
+      <created>1609540018977</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609540018977</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Project setup on git.&#10;Added initial code.">
+      <created>1609540089056</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609540089056</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added initial building code.&#10;Added out of bounds check to SeletionController.&#10;Added tooltip for easier information access.">
+      <created>1609547628176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609547628176</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added build interface.&#10;Added validation to check if we can build.&#10;Added clamp to board.">
+      <created>1609552926556</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609552926556</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,7 +118,22 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Project setup on git.&#10;Added initial code." />
+    <MESSAGE value="Added initial building code.&#10;Added out of bounds check to SeletionController.&#10;Added tooltip for easier information access." />
+    <MESSAGE value="Added build interface.&#10;Added validation to check if we can build.&#10;Added clamp to board." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added build interface.&#10;Added validation to check if we can build.&#10;Added clamp to board." />
   </component>
 </project>

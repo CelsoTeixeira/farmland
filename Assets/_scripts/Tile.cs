@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections;
 using System.Text;
-using Interface;
+using Farmland.Interface;
 using UnityEngine;
 
-namespace Terrain
+namespace Farmland.Terrain
 {
     public enum TileType
     {
