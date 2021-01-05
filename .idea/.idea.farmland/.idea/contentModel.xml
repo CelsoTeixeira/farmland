@@ -12,6 +12,14 @@
           <e p="BuildingController.cs" t="Include" />
           <e p="BuildingInterface.cs" t="Include" />
           <e p="CameraController.cs" t="Include" />
+          <e p="GameController.cs" t="Include" />
+          <e p="GameSetup.cs" t="Include" />
+          <e p="GameSetupValues.cs" t="Include" />
+          <e p="Resource.cs" t="Include" />
+          <e p="ResourceAmountRenderer.cs" t="Include" />
+          <e p="ResourceCollection.cs" t="Include" />
+          <e p="ResourceInterface.cs" t="Include" />
+          <e p="ResourceStorage.cs" t="Include" />
           <e p="SelectionController.cs" t="Include" />
           <e p="Tile.cs" t="Include" />
           <e p="TileCollection.cs" t="Include" />

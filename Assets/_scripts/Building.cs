@@ -1,10 +1,17 @@
 using System;
 using System.Text;
+using Farmland.Controller;
 using Farmland.Interface;
 using UnityEngine;
 
 namespace Farmland.Terrain
 {
+    public interface IProduction
+    {
+        void Produce(float deltaTime);
+        void DebugProduction();
+    }
+    
     [Serializable]
     public struct BuildingDetails
     {

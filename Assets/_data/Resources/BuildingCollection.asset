@@ -23,3 +23,8 @@ MonoBehaviour:
     Height: 1
     Prefab: {fileID: 3636967804449327688, guid: ca427bd9b7ff4764fb23dcd47007f918,
       type: 3}
+  - Name: Grain Farm
+    Width: 1
+    Height: 1
+    Prefab: {fileID: 8272140000973782045, guid: 49805e238a9a92c41a016fdeb68d7b82,
+      type: 3}

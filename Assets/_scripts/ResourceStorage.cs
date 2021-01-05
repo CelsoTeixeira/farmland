@@ -33,6 +33,8 @@ namespace Farmland.Resource
                     Debug.LogErrorFormat("Initial value contains key that have not been initialized! - {0}",  initialValues[i].Name );
                     continue;
                 }
+
+                Debug.Log(initialValues[i].Name);
                 
                 resourceStorage[initialValues[i].Name] = initialValues[i].Value;
                 OnResourceUpdate?.Invoke(initialValues[i].Name, resourceStorage[initialValues[i].Name]);
@@ -41,17 +43,19 @@ namespace Farmland.Resource
 
         public void UpdateStorageItem(string resourceName, float amountToChange)
         {
-            if (resourceStorage.ContainsKey(resourceName))
+            if (resourceStorage.ContainsKey(resourceName) == false)
             {
                 Debug.LogErrorFormat("Initial value contains key that have not been initialized! - {0}", resourceName);
                 return;
             }
-
+            
             var newResourceValue = resourceStorage[resourceName];
             newResourceValue += amountToChange;
             newResourceValue = Mathf.Clamp(newResourceValue, 0, newResourceValue);
+            resourceStorage[resourceName] = newResourceValue;
             
-            resourceStorage[resourceName] += newResourceValue;
+            Debug.LogFormat("Updating Resource Storage - {0} - {1}", resourceName, newResourceValue);
+            
             OnResourceUpdate?.Invoke(resourceName, resourceStorage[resourceName]);
         }
 

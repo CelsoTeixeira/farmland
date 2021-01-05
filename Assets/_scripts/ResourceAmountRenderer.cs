@@ -27,6 +27,8 @@ namespace Farmland.Interface
 
         private void AutoUpdate(string name, float value)
         {
+            Debug.Log("Update?");
+            
             if (Name.text == name)
             {
                 Amount.text = value.ToString();

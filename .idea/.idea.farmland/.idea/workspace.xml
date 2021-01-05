@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d880ef4e-283d-4dd9-8ae0-a38e15df8c0d" name="Default Changelist" comment="" />
+    <list default="true" id="d880ef4e-283d-4dd9-8ae0-a38e15df8c0d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/_scripts/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_scripts/Building.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,18 +14,28 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/Users/celsi/Documents/GitHub/farmland/Assets/_scripts/Building.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/celsi/Documents/GitHub/farmland/Assets/_scripts/GameController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/.gitignore" />
       <option value="$PROJECT_DIR$/Assets/_scripts/BuildingCollection.cs" />
-      <option value="$PROJECT_DIR$/Assets/_scripts/Tile.cs" />
-      <option value="$PROJECT_DIR$/Assets/_scripts/TileController.cs" />
-      <option value="$PROJECT_DIR$/Assets/_scripts/BuildingInterface.cs" />
       <option value="$PROJECT_DIR$/Assets/_scripts/BuildingController.cs" />
-      <option value="$PROJECT_DIR$/Assets/_scripts/Building.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/TileCollection.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/TileController.cs" />
       <option value="$PROJECT_DIR$/Assets/_scripts/Tooltip.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/Tile.cs" />
       <option value="$PROJECT_DIR$/Assets/_scripts/SelectionController.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/BuildingInterface.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/Resource.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/ResourceCollection.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/GameSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/ResourceInterface.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/ResourceStorage.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/ResourceAmountRenderer.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/GameController.cs" />
+      <option value="$PROJECT_DIR$/Assets/_scripts/Building.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mRVVQPA6xeZBQABFUhdDfqXRq7" />
@@ -81,6 +93,7 @@
       <updated>1609456423782</updated>
       <workItem from="1609456425773" duration="7344000" />
       <workItem from="1609538319804" duration="12177000" />
+      <workItem from="1609796061847" duration="5925000" />
     </task>
     <task id="LOCAL-00001" summary="Project setup on git.&#10;Added initial code.">
       <created>1609540018977</created>
@@ -110,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609552926556</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changed namespace.&#10;Added initial struct for game resources.">
+      <created>1609796909501</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609796909501</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added GameSetup.&#10;Added ResourceStorage.&#10;Connect Resource Interface to ResourceStorage.">
+      <created>1609802115324</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609802115324</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,12 +155,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Project setup on git.&#10;Added initial code." />
     <MESSAGE value="Added initial building code.&#10;Added out of bounds check to SeletionController.&#10;Added tooltip for easier information access." />
     <MESSAGE value="Added build interface.&#10;Added validation to check if we can build.&#10;Added clamp to board." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added build interface.&#10;Added validation to check if we can build.&#10;Added clamp to board." />
+    <MESSAGE value="Changed namespace.&#10;Added initial struct for game resources." />
+    <MESSAGE value="Added GameSetup.&#10;Added ResourceStorage.&#10;Connect Resource Interface to ResourceStorage." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added GameSetup.&#10;Added ResourceStorage.&#10;Connect Resource Interface to ResourceStorage." />
   </component>
 </project>
